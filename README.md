@@ -2,7 +2,7 @@
 
 End-to-end recommendation system that combines a **PyTorch Two-Tower** embedding model, an **implicit-feedback collaborative-filtering** baseline, a **content-based cold-start fallback**, and a **business-rule re-ranking** layer.
 
-> Mirrors the production engine I built at Limendo (2022–2024) — delivered ~20% engagement lift and ~12% 30-day retention improvement (A/B validated).
+> Mirrors a production engine I built in a prior role (2022–2024) — delivered ~20% engagement lift and ~12% 30-day retention improvement (A/B validated).
 
 ---
 
