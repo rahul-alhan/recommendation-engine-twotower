@@ -9,11 +9,11 @@ COLD_THRESHOLD = 5
 
 
 def is_cold_user(user_id: str, interactions: pd.DataFrame) -> bool:
-    return (interactions["user_id"] == user_id).sum() < COLD_THRESHOLD
+    return bool((interactions["user_id"] == user_id).sum() < COLD_THRESHOLD)
 
 
 def is_cold_item(item_id: str, interactions: pd.DataFrame) -> bool:
-    return (interactions["item_id"] == item_id).sum() < COLD_THRESHOLD
+    return bool((interactions["item_id"] == item_id).sum() < COLD_THRESHOLD)
 
 
 def popular_in_segment(user_id: str, users: pd.DataFrame, interactions: pd.DataFrame, top_k: int = 10) -> list[str]:
