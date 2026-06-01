@@ -125,6 +125,19 @@ recommendation-engine-twotower/
 
 ---
 
+## Running Tests
+
+Install dev dependencies (includes pytest) and run the suite:
+
+```bash
+pip install -r requirements-dev.txt
+python -m pytest -q
+```
+
+Pytest config lives in `pyproject.toml` (`testpaths = ["tests"]`, `pythonpath = ["."]`).
+
+---
+
 ## Production Notes
 
 - Trained nightly on **AWS SageMaker** (PyTorch container, single GPU)
